@@ -8,55 +8,51 @@
   
   <title>Frontend Mentor | Stats preview card component</title>
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
 
-  <div id="project-container">
-    <div id="card-container">
-      <div id="left-side">
-        <div id="left-side-content-container">
-          <div id="insight-title">
-            <h1>Get <span>insights</span> that help your business grow.</h1>
-          </div>
-          <div id="description-container">
-            <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
-          </div>
-          <div id="stats-container">
-            <div id="companies">
-              <h2>10k+</h2>
-              <h3>Companies</h3>
+  <div id="project-container" class="flex items-center justify-center h-screen">
+    <div id="card-container" class="w-10/12 md:w-10/12 rounded-xl">
+      <div id="card-layout" class="flex flex-col-reverse  justify-center md:grid grid-cols-2">
+        <div id="left-side " class="order-2 md:order-1 md:pr-10">
+          <div id="left-side-content-container" class="py-10 md:p-20 text-center md:text-left">
+            <div id="insight-title">
+              <h1 class="text-2xl md:text-4xl font-bold">Get <span class="text-purple-600">insights</span> that help your business grow.</h1>
             </div>
-            <div id="templates">
-              <h2>314</h2>
-              <h3>Templates</h3>
+            <div id="description-container" class="md:pr-10">
+              <p class="text-sm py-10 tracking-wide text-gray-400 leading-loose">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
             </div>
-            <div id="queries">
-              <h2>12M+</h2>
-              <h3>queries</h3>
+            <div id="stats-container" class="grid grid-cols-1 md:grid-cols-3">
+              <div id="companies" class="py-5 md:py-0">
+                <h2 class="tracking-tighter">10k+</h2>
+                <h3>Companies</h3>
+              </div>
+              <div id="templates" class="py-5 md:py-0">
+                <h2 class="tracking-tighter">314</h2>
+                <h3>Templates</h3>
+              </div>
+              <div id="queries" class="py-5 md:py-0">
+                <h2 class="tracking-tighter">12M+</h2>
+                <h3>queries</h3>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div id="right-side">
-
+        <div id="right-side" class="rounded-t-xl md:rounded-r-xl order-1 md: order-2">
+          <div id="img-container" >
+            <img src="images/image-header-desktop.jpg" alt="" srcset="" class="rounded-t-xl w-full md:rounded-r-xl">
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>
